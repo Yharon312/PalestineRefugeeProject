@@ -1,3 +1,79 @@
-h1 {
-    text-align: center;
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background: #fafafa;
+  color: #222;
+  line-height: 1.6;
+}
+
+.prototype {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 4rem;
+}
+
+header {
+  border-bottom: 2px solid #333;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  margin: 0 0 0.25rem;
+  font-size: 2rem;
+}
+
+.subtitle {
+  margin: 0;
+  color: #666;
+  font-style: italic;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 0.25rem;
+  margin-bottom: 0.75rem;
+}
+
+p {
+  margin: 0 0 0.75rem;
+}
+
+ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+th, td {
+  border: 1px solid #bbb;
+  padding: 0.4rem 0.6rem;
+  text-align: left;
+}
+
+th {
+  background: #eee;
+}
+
+a {
+  color: #1a5490;
+}
+
+footer {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ccc;
+  font-size: 0.85rem;
+  color: #777;
+  text-align: center;
 }
