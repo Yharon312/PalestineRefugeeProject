@@ -5,84 +5,199 @@
     <title>Palestinian Refugees</title>
     <link rel="stylesheet" href="style.css">
   </head>
+
+
+
   <body>
-    <div class="prototype">
-      <header>
-        <h1>Palestinian Refugees</h1>
-        <p class="subtitle">An informational overview</p>
-      </header>
-
-      <main>
-        <section>
-          <h2>About This Website</h2>
-          <p>
-            This website currently provides an overview of Palestinian refugees, their history, 
-            current status, and living conditions. our goal is to raise awareness and 
-            provide accurate information about this important topic. This is a prototype 
-            made by Troy Coulter, Sid Belt Gadgil, and Kristthor Gudnason for our world 
-            literature class on the subject of the book Kite Runner at Innovation Academy.
-          </p>
-        </section>
-        
-        <section>
-          <h2>Background</h2>
-          <p>
-            Palestinian refugees are one of the world's longest-standing refugee
-            populations. Their displacement began in 1948 during the events known
-            as the Nakba ("catastrophe"), when approximately 700,000 Palestinians
-            were displaced from their homes. Subsequent conflicts produced further
-            waves of displacement.
-          </p>
-        </section>
-
-        <section>
-          <h2>Key Statistics</h2>
-          <ul>
-            <li>About 5.9 million registered refugees under UNRWA (as of 2023)</li>
-            <li>58 official refugee camps across the region</li>
-            <li>Many refugees are now third or fourth generation</li>
-          </ul>
-        </section>
-
-        <section>
-          <h2>Where Refugees Live</h2>
-          <table>
-            <thead>
-              <tr>
-                <th>Location</th>
-                <th>Registered Refugees (approx.)</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>Jordan</td><td>2,400,000</td></tr>
-              <tr><td>Gaza Strip</td><td>1,600,000</td></tr>
-              <tr><td>West Bank</td><td>871,000</td></tr>
-              <tr><td>Lebanon</td><td>489,000</td></tr>
-              <tr><td>Syria</td><td>438,000</td></tr>
-            </tbody>
-          </table>
-        </section>
-
-        <section>
-          <h2>Living Conditions</h2>
-          <p>
-            Many refugees live in overcrowded camps with limited access to clean
-            water, sanitation, and healthcare. UNRWA (the UN Relief and Works
-            Agency) has provided education, health, and relief services since
-            1950.
-          </p>
-        </section>
-
-        <section>
-          <h2>Future Additions To this Website</h2>
-          <ul>
-            <li>Interview of a Palestinian refugee page</li>
-            <li>Artifacts and historcal signfigance page</li>
-            <li>A page about refugee life instead of one section</li>
-            <li>thematic connections to the book Kite Runner throughout pages</li>
-          </ul>
-        </section>
-      </main>
+    <div class="page" id="page">
+      <section class="section intro" data-index="0">
+    <div class="intro-inner">
+      <h1>Palestinian Refugees</h1>
+      <p class="lede">
+        An interactive overview of one of the world's longest-standing refugee
+        populations — their history, their daily lives, and the literature that
+        helps us understand the meaning of losing a home.
+      </p>
+      <div class="how-to">
+        <p><strong>Scroll down</strong> to move between topics.</p>
+        <p>Use the <strong>left and right arrow keys</strong> (or the buttons) to explore more within each topic.</p>
+      </div>
+      <div class="scroll-hint">Scroll to begin ↓</div>
     </div>
+  </section>
+
+
+
+  <section class="section topic" data-index="1" data-topic="0">
+    <div class="topic-inner">
+      <div class="topic-meta">
+        <span class="topic-label">Topic 1</span>
+        <h2>Artifacts &amp; Historical Significance</h2>
+      </div>
+      <div class="slide" data-slide-container></div>
+      <div class="slide-controls">
+        <button data-prev>← Prev</button>
+        <div class="dots" data-dots></div>
+        <button data-next>Next →</button>
+      </div>
+      <div class="counter" data-counter></div>
+    </div>
+  </section>
+
+
+
+  <section class="section topic" data-index="2" data-topic="1">
+    <div class="topic-inner">
+      <div class="topic-meta">
+        <span class="topic-label">Topic 2</span>
+        <h2>Life as a Palestinian Refugee</h2>
+      </div>
+      <div class="slide" data-slide-container></div>
+      <div class="slide-controls">
+        <button data-prev>← Prev</button>
+        <div class="dots" data-dots></div>
+        <button data-next>Next →</button>
+      </div>
+      <div class="counter" data-counter></div>
+    </div>
+  </section>
+
+
+
+  <section class="section topic" data-index="3" data-topic="2">
+    <div class="topic-inner">
+      <div class="topic-meta">
+        <span class="topic-label">Topic 3</span>
+        <h2>Statistics, Resources &amp; The Kite Runner</h2>
+      </div>
+      <div class="slide" data-slide-container></div>
+      <div class="slide-controls">
+        <button data-prev>← Prev</button>
+        <div class="dots" data-dots></div>
+        <button data-next>Next →</button>
+      </div>
+      <div class="counter" data-counter></div>
+    </div>
+  </section>
+
+      <nav class="side-nav" id="sideNav" aria-label="Section navigation"></nav>
+    </div>
+
+
+
+    <script>
+      const TOPICS = [
+        {
+          label: "Topic 1",
+          slides: [
+            { title: "The Key", body: `<p>The most enduring artifact of Palestinian refugee identity is the house key. When families fled in 1948, many locked their doors expecting to return within weeks. Generations later, these keys are still passed down — symbols of a home remembered and a return still hoped for.</p>` },
+            { title: "The Nakba (1948)", body: `<p>The Nakba, meaning "catastrophe" in Arabic, refers to the mass displacement of approximately 700,000 Palestinians from their homes during the 1948 war. Over 500 villages were depopulated or destroyed.</p><p>May 15 is observed annually as Nakba Day, marking one of the defining events of modern Middle Eastern history.</p>` },
+            { title: "Land Deeds & Documents", body: `<p>Ottoman-era and British Mandate land deeds, ID papers, and family photographs are carefully preserved across generations. These documents serve as proof of ownership, of place, and of a life that existed before displacement.</p>` },
+            { title: "Embroidery (Tatreez)", body: `<p>Traditional Palestinian embroidery — tatreez — encodes village identity in its patterns. Each region had distinctive motifs, and today the practice is a living archive of places many refugees have never been able to visit.</p>` }
+          ]
+        },
+        {
+          label: "Topic 2",
+          slides: [
+            { title: "The Camps", body: `<p>There are 58 official Palestinian refugee camps across Jordan, Lebanon, Syria, the West Bank, and the Gaza Strip. Originally set up as temporary tent settlements in 1948, most have evolved into dense, permanent neighborhoods.</p>` },
+            { title: "Daily Conditions", body: `<p>Many camps face overcrowding, limited clean water, intermittent electricity, and strained healthcare. UNRWA operates schools and clinics that serve millions, but funding shortfalls regularly threaten basic services.</p>` },
+            { title: "Identity & Belonging", body: `<p>Children born in the camps inherit refugee status. A young person today may be a third or fourth generation refugee — born in a place their family was never meant to stay, holding the memory of a place they have never seen.</p>` },
+            { title: "Resilience", body: `<p>Despite hardship, camp communities sustain rich cultural life: poetry, music, sports clubs, theater groups, and oral history projects. Resilience is not the absence of suffering — it is the continuation of life and culture in spite of it.</p>` }
+          ]
+        },
+        {
+          label: "Topic 3",
+          slides: [
+            { title: "By the Numbers", body: `<ul><li>~5.9 million registered refugees under UNRWA (2023)</li><li>58 official refugee camps</li><li>Jordan: ~2.4 million registered refugees</li><li>Gaza: ~1.6 million</li><li>West Bank: ~871,000</li><li>Lebanon: ~489,000</li><li>Syria: ~438,000</li></ul>` },
+            { title: "Connection: The Kite Runner", body: `<p>Khaled Hosseini's <em>The Kite Runner</em> follows Amir, who flees Kabul as the Soviets invade and spends decades in exile in California. The novel's deepest current is the loss of home — not just a house, but a way of being in the world.</p>` },
+            { title: "Theme: Loss of Home", body: `<p>Amir says of Kabul, "There is a way to be good again," but the city he longs for is gone. That ache — for streets, smells, and relationships that no longer exist — mirrors the experience of Palestinian refugees who carry keys to houses that may no longer stand.</p><p>In both stories, exile is not a single event but a permanent condition that shapes generations. Home becomes something carried inside rather than lived in.</p>` },
+            { title: "Resources", body: `<ul><li><a href="https://www.unrwa.org/" target="_blank" rel="noreferrer">UNRWA — UN Relief and Works Agency</a></li><li><a href="https://www.unhcr.org/" target="_blank" rel="noreferrer">UNHCR — UN Refugee Agency</a></li><li><a href="https://www.palestine-studies.org/" target="_blank" rel="noreferrer">Institute for Palestine Studies</a></li></ul>` }
+          ]
+        }
+      ];
+
+
+
+      const slideIndex = TOPICS.map(() => 0);
+      let currentSection = 0;
+      const topicSections = document.querySelectorAll(".topic");
+      function renderTopic(tIdx) {
+        const section = topicSections[tIdx];
+        const topic = TOPICS[tIdx];
+        const sIdx = slideIndex[tIdx];
+        const slide = topic.slides[sIdx];
+        section.querySelector("[data-slide-container]").innerHTML =
+          `<h3>${slide.title}</h3>${slide.body}`;
+        section.querySelector("[data-counter]").textContent =
+          `${sIdx + 1} of ${topic.slides.length}`;
+        section.querySelector("[data-prev]").disabled = sIdx === 0;
+        section.querySelector("[data-next]").disabled = sIdx === topic.slides.length - 1;
+        const dotsEl = section.querySelector("[data-dots]");
+        dotsEl.innerHTML = "";
+        topic.slides.forEach((_, i) => {
+          const b = document.createElement("button");
+          b.className = "dot" + (i === sIdx ? " active" : "");
+          b.setAttribute("aria-label", "Slide " + (i + 1));
+          b.addEventListener("click", () => { slideIndex[tIdx] = i; renderTopic(tIdx); });
+          dotsEl.appendChild(b);
+        });
+      }
+
+
+
+      topicSections.forEach((section, tIdx) => {
+        section.querySelector("[data-prev]").addEventListener("click", () => {
+          if (slideIndex[tIdx] > 0) { slideIndex[tIdx]--; renderTopic(tIdx); }
+        });
+        section.querySelector("[data-next]").addEventListener("click", () => {
+          if (slideIndex[tIdx] < TOPICS[tIdx].slides.length - 1) {
+            slideIndex[tIdx]++; renderTopic(tIdx);
+          }
+        });
+        renderTopic(tIdx);
+      });
+
+
+
+      // Build side nav
+      const sideNav = document.getElementById("sideNav");
+      const allSections = document.querySelectorAll(".section");
+      const labels = ["Intro", ...TOPICS.map(t => t.label)];
+      allSections.forEach((sec, i) => {
+        const b = document.createElement("button");
+        b.className = "nav-dot" + (i === 0 ? " active" : "");
+        b.title = labels[i];
+        b.setAttribute("aria-label", "Go to " + labels[i]);
+        b.addEventListener("click", () => sec.scrollIntoView({ behavior: "smooth" }));
+        sideNav.appendChild(b);
+      });
+      const navDots = sideNav.querySelectorAll(".nav-dot");
+
+
+
+      // Track current section
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            currentSection = Number(entry.target.dataset.index);
+            navDots.forEach((d, i) => d.classList.toggle("active", i === currentSection));
+          }
+        });
+      }, { threshold: 0.6, root: document.getElementById("page") });
+      allSections.forEach(s => observer.observe(s));
+
+
+
+      // Arrow key navigation within current topic
+      window.addEventListener("keydown", (e) => {
+        if (currentSection === 0) return;
+        const tIdx = currentSection - 1;
+        if (e.key === "ArrowRight" && slideIndex[tIdx] < TOPICS[tIdx].slides.length - 1) {
+          slideIndex[tIdx]++; renderTopic(tIdx);
+        } else if (e.key === "ArrowLeft" && slideIndex[tIdx] > 0) {
+          slideIndex[tIdx]--; renderTopic(tIdx);
+        }
+      });
+    </script>
   </body>
 </html>
