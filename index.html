@@ -6,84 +6,76 @@
     <link rel="stylesheet" href="style.css">
   </head>
 
-
-
   <body>
     <div class="page" id="page">
+
       <section class="section intro" data-index="0">
-    <div class="intro-inner">
-      <h1>Palestinian Refugees</h1>
-      <p class="lede">
-        An interactive overview of one of the world's longest-standing refugee
-        populations — their history, their daily lives, and the literature that
-        helps us understand the meaning of losing a home.
-      </p>
-      <div class="how-to">
-        <p><strong>Scroll down</strong> to move between topics.</p>
-        <p>Use the <strong>left and right arrow keys</strong> (or the buttons) to explore more within each topic.</p>
-      </div>
-      <div class="scroll-hint">Scroll to begin ↓</div>
-    </div>
-  </section>
+        <div class="intro-inner">
+          <h1>Palestinian Refugees</h1>
+          <p class="lede">
+            An interactive overview of one of the world's longest-standing refugee
+            populations — their history, their daily lives, and the literature that
+            helps us understand the meaning of losing a home.
+          </p>
+          <div class="how-to">
+            <p><strong>Scroll down</strong> to move between topics.</p>
+            <p>Use the <strong>left and right arrow keys</strong> (or the buttons) to explore more within each topic.</p>
+          </div>
+          <div class="scroll-hint">Scroll to begin ↓</div>
+        </div>
+      </section>
 
+      <section class="section topic" data-index="1" data-topic="0">
+        <div class="topic-inner">
+          <div class="topic-meta">
+            <span class="topic-label">Topic 1</span>
+            <h2>Artifacts &amp; Historical Significance</h2>
+          </div>
+          <div class="slide" data-slide-container></div>
+          <div class="slide-controls">
+            <button data-prev>← Prev</button>
+            <div class="dots" data-dots></div>
+            <button data-next>Next →</button>
+          </div>
+          <div class="counter" data-counter></div>
+        </div>
+      </section>
 
+      <section class="section topic" data-index="2" data-topic="1">
+        <div class="topic-inner">
+          <div class="topic-meta">
+            <span class="topic-label">Topic 2</span>
+            <h2>Life as a Palestinian Refugee</h2>
+          </div>
+          <div class="slide" data-slide-container></div>
+          <div class="slide-controls">
+            <button data-prev>← Prev</button>
+            <div class="dots" data-dots></div>
+            <button data-next>Next →</button>
+          </div>
+          <div class="counter" data-counter></div>
+        </div>
+      </section>
 
-  <section class="section topic" data-index="1" data-topic="0">
-    <div class="topic-inner">
-      <div class="topic-meta">
-        <span class="topic-label">Topic 1</span>
-        <h2>Artifacts &amp; Historical Significance</h2>
-      </div>
-      <div class="slide" data-slide-container></div>
-      <div class="slide-controls">
-        <button data-prev>← Prev</button>
-        <div class="dots" data-dots></div>
-        <button data-next>Next →</button>
-      </div>
-      <div class="counter" data-counter></div>
-    </div>
-  </section>
-
-
-
-  <section class="section topic" data-index="2" data-topic="1">
-    <div class="topic-inner">
-      <div class="topic-meta">
-        <span class="topic-label">Topic 2</span>
-        <h2>Life as a Palestinian Refugee</h2>
-      </div>
-      <div class="slide" data-slide-container></div>
-      <div class="slide-controls">
-        <button data-prev>← Prev</button>
-        <div class="dots" data-dots></div>
-        <button data-next>Next →</button>
-      </div>
-      <div class="counter" data-counter></div>
-    </div>
-  </section>
-
-
-
-  <section class="section topic" data-index="3" data-topic="2">
-    <div class="topic-inner">
-      <div class="topic-meta">
-        <span class="topic-label">Topic 3</span>
-        <h2>Statistics, Resources &amp; The Kite Runner</h2>
-      </div>
-      <div class="slide" data-slide-container></div>
-      <div class="slide-controls">
-        <button data-prev>← Prev</button>
-        <div class="dots" data-dots></div>
-        <button data-next>Next →</button>
-      </div>
-      <div class="counter" data-counter></div>
-    </div>
-  </section>
+      <section class="section topic" data-index="3" data-topic="2">
+        <div class="topic-inner">
+          <div class="topic-meta">
+            <span class="topic-label">Topic 3</span>
+            <h2>Statistics, Resources &amp; The Kite Runner</h2>
+          </div>
+          <div class="slide" data-slide-container></div>
+          <div class="slide-controls">
+            <button data-prev>← Prev</button>
+            <div class="dots" data-dots></div>
+            <button data-next>Next →</button>
+          </div>
+          <div class="counter" data-counter></div>
+        </div>
+      </section>
 
       <nav class="side-nav" id="sideNav" aria-label="Section navigation"></nav>
+
     </div>
-
-
 
     <script>
       const TOPICS = [
@@ -99,10 +91,25 @@
         {
           label: "Topic 2",
           slides: [
-            { title: "The Camps", body: `<p>There are 58 official Palestinian refugee camps across Jordan, Lebanon, Syria, the West Bank, and the Gaza Strip. Originally set up as temporary tent settlements in 1948, most have evolved into dense, permanent neighborhoods.</p>` },
-            { title: "Daily Conditions", body: `<p>Many camps face overcrowding, limited clean water, intermittent electricity, and strained healthcare. UNRWA operates schools and clinics that serve millions, but funding shortfalls regularly threaten basic services.</p>` },
-            { title: "Identity & Belonging", body: `<p>Children born in the camps inherit refugee status. A young person today may be a third or fourth generation refugee — born in a place their family was never meant to stay, holding the memory of a place they have never seen.</p>` },
-            { title: "Resilience", body: `<p>Despite hardship, camp communities sustain rich cultural life: poetry, music, sports clubs, theater groups, and oral history projects. Resilience is not the absence of suffering — it is the continuation of life and culture in spite of it.</p>` }
+            {
+              title: "The Camps",
+              image: { src: "image1.jpeg", credit: "UNRWA" },
+              body: `<p>There are 58 official Palestinian refugee camps across Jordan, Lebanon, Syria, the West Bank, and the Gaza Strip. Originally set up as temporary tent settlements in 1948, most have evolved into dense, permanent neighborhoods.</p>`
+            },
+            {
+              title: "Daily Conditions",
+              image: { src: "image2.jpeg", credit: "UNRWA" },
+              body: `<p>Housing conditions are awful. They are overcrowded, and the camps lack infrastructure such as roads and sanitation. In Lebanon refugees can't build or fix property, as it is illegal to do so. There are large health challenges because of lack of medicine. Overcrowding, lack of infrastructure, and lack of proper nutrition make it worse. Winter rains can bring sewage into people's area of residence.</p>`
+            },
+            {
+              title: "Identity & Belonging",
+              image: { src: "image3.jpeg", credit: "OPB" },
+              body: `<p>For many Palestinians, their connection to Palestine is tied to the right to return and their clinging on to justice. Refugees who have no memory of their homeland built their images of Palestine from the stories and memories their family shared. But when a refugee who hasn't been to Palestine finally manages to go there, it's different than what they pictured. And that can cause a clashing in the brain.</p>`
+            },
+            {
+              title: "Resilience",
+              body: `<p>Even through all the hardships, the Palestinian refugees are a proud people. They hold on to the hope that one day they will return to their country. The resilience and determination to return to their country is passed down the generations.</p>`
+            }
           ]
         },
         {
@@ -116,22 +123,32 @@
         }
       ];
 
-
-
       const slideIndex = TOPICS.map(() => 0);
       let currentSection = 0;
+
       const topicSections = document.querySelectorAll(".topic");
+
       function renderTopic(tIdx) {
         const section = topicSections[tIdx];
         const topic = TOPICS[tIdx];
         const sIdx = slideIndex[tIdx];
         const slide = topic.slides[sIdx];
-        section.querySelector("[data-slide-container]").innerHTML =
-          `<h3>${slide.title}</h3>${slide.body}`;
-        section.querySelector("[data-counter]").textContent =
-          `${sIdx + 1} of ${topic.slides.length}`;
+
+        const slideEl = section.querySelector("[data-slide-container]");
+        let html = "";
+        if (slide.image) {
+          slideEl.classList.add("slide-with-image");
+          html += `<figure class="slide-figure"><img src="${slide.image.src}" alt="${slide.title}"><figcaption>Image: ${slide.image.credit}</figcaption></figure>`;
+        } else {
+          slideEl.classList.remove("slide-with-image");
+        }
+        html += `<div class="slide-text"><h3>${slide.title}</h3>${slide.body}</div>`;
+        slideEl.innerHTML = html;
+
+        section.querySelector("[data-counter]").textContent = `${sIdx + 1} of ${topic.slides.length}`;
         section.querySelector("[data-prev]").disabled = sIdx === 0;
         section.querySelector("[data-next]").disabled = sIdx === topic.slides.length - 1;
+
         const dotsEl = section.querySelector("[data-dots]");
         dotsEl.innerHTML = "";
         topic.slides.forEach((_, i) => {
@@ -142,8 +159,6 @@
           dotsEl.appendChild(b);
         });
       }
-
-
 
       topicSections.forEach((section, tIdx) => {
         section.querySelector("[data-prev]").addEventListener("click", () => {
@@ -157,9 +172,6 @@
         renderTopic(tIdx);
       });
 
-
-
-      // Build side nav
       const sideNav = document.getElementById("sideNav");
       const allSections = document.querySelectorAll(".section");
       const labels = ["Intro", ...TOPICS.map(t => t.label)];
@@ -173,9 +185,6 @@
       });
       const navDots = sideNav.querySelectorAll(".nav-dot");
 
-
-
-      // Track current section
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
@@ -186,9 +195,6 @@
       }, { threshold: 0.6, root: document.getElementById("page") });
       allSections.forEach(s => observer.observe(s));
 
-
-
-      // Arrow key navigation within current topic
       window.addEventListener("keydown", (e) => {
         if (currentSection === 0) return;
         const tIdx = currentSection - 1;

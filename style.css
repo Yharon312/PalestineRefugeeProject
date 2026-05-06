@@ -111,6 +111,40 @@ body {
   min-height: 220px;
 }
 
+.slide-with-image {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 1.25rem;
+  align-items: start;
+}
+
+@media (max-width: 600px) {
+  .slide-with-image {
+    grid-template-columns: 1fr;
+  }
+}
+
+.slide-figure {
+  margin: 0;
+}
+
+.slide-figure img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  display: block;
+}
+
+.slide-figure figcaption {
+  font-size: 0.75rem;
+  color: #777;
+  font-style: italic;
+  text-align: center;
+  margin-top: 0.35rem;
+}
+
 .slide h3 {
   margin: 0 0 0.75rem;
   font-size: 1.25rem;
